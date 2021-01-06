@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {FooterContainer, FooterContent, FooterCopyright, FooterNav, FooterNavItem, FooterNavLink} from './footerElements'
+import {FooterContainer, FooterContent, FooterCopyright, FooterNav, FooterNavItem, FooterNavLink, FooterExternalNavLink} from './footerElements'
 
 const Footer = () => {
   return (
@@ -11,19 +11,19 @@ const Footer = () => {
         </FooterCopyright>
         <FooterNav>
           <FooterNavItem>
-            <FooterNavLink external="true" to="#">
+            <FooterExternalNavLink href="https://github.com/AxlRicci">
               Github
-            </FooterNavLink>
+            </FooterExternalNavLink>
           </FooterNavItem>
           <FooterNavItem>
-            <FooterNavLink external="true" to="#">
+            <FooterExternalNavLink href="https://www.linkedin.com/in/alex-ricci-b347b619b">
               LinkedIn
-            </FooterNavLink>
+            </FooterExternalNavLink>
           </FooterNavItem>
           <FooterNavItem>
-            <FooterNavLink external="true" to="#">
+            <FooterExternalNavLink href="mailto:alexricci.dev@gmail.com">
               Email
-            </FooterNavLink>
+            </FooterExternalNavLink>
           </FooterNavItem>
         </FooterNav>
       </FooterContent>

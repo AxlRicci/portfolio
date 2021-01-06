@@ -20,7 +20,7 @@ const CtaSection = () => {
           <CtaHeading>
             {ctaTitle}
           </CtaHeading>
-          <CustomButton big="true" label={ctaButtonText} external="true" to="https://mailto:alexricci.dev@gmail.com" />
+          <CustomButton big="true" label={ctaButtonText} external="true" to="mailto:alexricci.dev@gmail.com" />
         </CtaContentCard>
       </CtaSectionContainer>
     )} />

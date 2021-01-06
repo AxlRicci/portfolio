@@ -51,3 +51,9 @@ export const FooterNavLink = styled(Link)`
   color: inherit;
 `
 
+export const FooterExternalNavLink = styled.a`
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+`
+

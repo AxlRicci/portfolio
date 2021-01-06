@@ -52,7 +52,7 @@ const ProjectGalleryItem = ({project}) => {
         <CardActions>
           {
             links.map(({title, url}) => (
-              <CustomButton key={title} label={title} url={url} big="true" external />
+              <CustomButton key={title} label={title} to={url} external />
             ))
           }
         </CardActions>
