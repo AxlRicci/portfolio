@@ -1,48 +1,55 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
 <h1 align="center">
-  Gatsby minimal starter
+  <br>
+  <img src="https://www.flaticon.com/svg/static/icons/svg/3595/3595030.svg" alt="Markdownify" width="200">
+  <br>
+  Gatsby Portfolio
+  <br>
 </h1>
 
-## 🚀 Quick start
+<h4 align="center">A minimalistic web developer portfolio powered by Gatsby JS, Sanity.io and GraphQl.</h4>
 
-1.  **Create a Gatsby site.**
+<p align="center">
+  <a href="#key-features">Key Features</a> •
+  <a href="#demo">Demo</a> •
+  <a href="#credits">Credits</a> •
+  <a href="#license">License</a>
+</p>
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+## Key Features
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+* Gatsby JS
+* Styled components
+* Fully responsive design
+* Sanity.io CMS with GraphQl endpoint
+* Hosted on Netlify (with auto deploy hooks)
 
-2.  **Start developing.**
+## Demo
+### Survey 
 
-    Navigate into your new site’s directory and start it up.
+[![Modal---Demo.gif](https://media.giphy.com/media/p3kQTVciQHJd7B53zG/giphy.gif)](https://media.giphy.com/media/p3kQTVciQHJd7B53zG/giphy.gif)
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+### User Authentication
 
-3.  **Open the code and start customizing!**
+[![Modal---Demo.gif](https://media.giphy.com/media/sgkoANfCW4FhwbRXqu/giphy.gif)](https://media.giphy.com/media/sgkoANfCW4FhwbRXqu/giphy.gif)
 
-    Your site is now running at http://localhost:8000!
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+## Credits
 
-4.  **Learn more**
+This software uses the following resources:
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+- [GatsbyJS](https://www.gatsbyjs.com/)
+- [Sanity.io](https://www.sanity.io/)
+- [GraphQl](https://graphql.org/)
+- [Netlify](https://www.netlify.com/)
+- [React Icons](https://react-icons.github.io/react-icons)
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+## License
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+MIT
 
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+---
 
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+> [alexricci.ca](https://www.alexricci.ca) &nbsp;&middot;&nbsp;
+> GitHub [@AxlRicci](https://github.com/axlricci) &nbsp;&middot;&nbsp;
+> LinkedIn [Alex Ricci](https://www.linkedin.com/in/alex-ricci-b347b619b)
