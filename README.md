@@ -25,7 +25,7 @@
 
 ## Demo
 
-Demo to come
+![https://media.giphy.com/media/ZN4rKgqEjNkWtgcmYN/giphy.gif](https://media.giphy.com/media/ZN4rKgqEjNkWtgcmYN/giphy.gif)
 
 ## Credits
 
