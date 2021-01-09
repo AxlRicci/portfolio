@@ -1,7 +1,7 @@
 const siteMetadata = {
   title: `Alex Ricci | Portfolio`,
   description: `Alex Ricci's web developer portfolio.`,
-  image: ``,
+  image: `./src/images/mockup-portfolio.png`,
   siteUrl: `https://alexricci.ca`,
   siteLanguage: `en-US`,
   siteLocale: `en-US`,
