@@ -77,6 +77,7 @@ export const TechListItem = styled.li`
 export const ProjectDescription = styled.p`
   margin-top: 2rem;
   font-size: 1.6rem;
+  line-height: 1.7;
 `
 
 export const CardActions = styled.div`

@@ -44,6 +44,7 @@ export const CardHeadingSubtitle = styled.p`
   
   font-size: 1.6rem;
   font-weight: 600;
+  white-space: pre-line;
 `
 
 export const CardBody = styled.p`
@@ -53,7 +54,8 @@ export const CardBody = styled.p`
   
   font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.7;
+  white-space: pre-line;
 `
 
 export const CardGallery = styled.div`

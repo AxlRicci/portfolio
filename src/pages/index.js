@@ -1,4 +1,6 @@
 import * as React from "react"
+import { Helmet } from "react-helmet"
+
 import AboutSection from '../components/aboutSection';
 import CtaSection from '../components/ctaSection'
 import HeroSection from "../components/heroSection";
@@ -9,6 +11,9 @@ import Layout from "../components/layout";
 const IndexPage = () => {
   return (
     <Layout>
+      <Helmet>
+        <title>Alex Ricci | Portfolio</title>
+      </Helmet>
       <HeroSection />
       <AboutSection />
       <ProjectsSection />

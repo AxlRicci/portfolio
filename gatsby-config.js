@@ -1,12 +1,35 @@
+const siteMetadata = {
+  title: `Alex Ricci | Portfolio`,
+  description: `Alex Ricci's web developer portfolio.`,
+  image: ``,
+  siteUrl: `https://alexricci.ca`,
+  siteLanguage: `en-US`,
+  siteLocale: `en-US`,
+  authorName: `Alex Ricci`,
+  favicon: `./src/images/bear.svg`,
+  background_color: `#fff`,
+  theme_color: `#e7e7e7`,
+}
+
 module.exports = {
-  siteMetadata: {
-    title: "portfolio",
-  },
+  siteMetadata: siteMetadata,
   plugins: [
     "gatsby-plugin-styled-components",
-    "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Alex Ricci | Portfolio`,
+        short_name: `Alex Ricci`,
+        start_url: `/`,
+        background_color: siteMetadata.background_color,
+        theme_color: siteMetadata.theme_color,
+        display: `standalone`,
+        icon: siteMetadata.favicon,
+      },
+    },
     {
       resolve: "gatsby-plugin-anchor-links",
       options: {

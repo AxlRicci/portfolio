@@ -24,14 +24,8 @@
 * Hosted on Netlify (with auto deploy hooks)
 
 ## Demo
-### Survey 
 
-[![Modal---Demo.gif](https://media.giphy.com/media/p3kQTVciQHJd7B53zG/giphy.gif)](https://media.giphy.com/media/p3kQTVciQHJd7B53zG/giphy.gif)
-
-### User Authentication
-
-[![Modal---Demo.gif](https://media.giphy.com/media/sgkoANfCW4FhwbRXqu/giphy.gif)](https://media.giphy.com/media/sgkoANfCW4FhwbRXqu/giphy.gif)
-
+Demo to come
 
 ## Credits
 

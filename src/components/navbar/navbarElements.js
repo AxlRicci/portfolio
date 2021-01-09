@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { AnchorLink } from 'gatsby-plugin-anchor-links'
-import { SiAircall } from "react-icons/si";
+import { RiBearSmileLine } from "react-icons/ri";
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
 export const NavContainer = styled.nav`
@@ -38,11 +38,11 @@ export const NavLogo = styled.div`
   align-items: center;
   justify-content: start;
 
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight: 600;
 `
 
-export const NavIcon = styled(SiAircall)`
+export const NavIcon = styled(RiBearSmileLine)`
   height: 30px;
   width: 30px;
   margin-right: 1rem;
