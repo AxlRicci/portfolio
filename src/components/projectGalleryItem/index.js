@@ -15,7 +15,7 @@ import {
 
 import CustomButton from '../customButton'
 
-const ProjectGalleryItem = ({project}) => {
+const ProjectGalleryItem = ({project, attrs}) => {
   const {
     title, 
     description, 
@@ -25,13 +25,7 @@ const ProjectGalleryItem = ({project}) => {
   } = project;
 
   return (
-    <GalleryCardContainer 
-      attrs={{
-        "data-sal": 'fade',
-        "data-sal": 'slide-up',
-        "data-sal-duration": '500',
-      }}
-    >
+    <GalleryCardContainer attrs={attrs}>
       <CardImageContainer>
         <CardImage fluid={fluid} />
       </CardImageContainer>

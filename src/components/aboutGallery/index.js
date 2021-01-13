@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { StaticQuery, graphql } from 'gatsby'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 import { AboutGalleryContainer } from './aboutGalleryElements';
 
@@ -9,6 +11,28 @@ import { CardHeadingTitle, CardHeadingSubtitle, CardHeading, CardBody, CardGalle
 
 
 const AboutGrid = () => {
+  gsap.registerPlugin(ScrollTrigger)
+  const ref = useRef(null);
+  useEffect(() => {
+    const el = ref.current;
+    gsap.fromTo(
+      el.querySelector("#about-1"),
+      {xPercent: -100, opacity: 0},
+      {opacity: 1, xPercent: 0, duration: 1, scrollTrigger: {
+        trigger: el.querySelector("#about-1"),
+        start: "top bottom",
+      }}
+    )
+    gsap.fromTo(
+      el.querySelector("#about-2"),
+      {xPercent: 100, opacity: 0},
+      {opacity: 1, xPercent: 0, duration: 1, scrollTrigger: {
+        trigger: el.querySelector("#about-2"),
+        start: "top bottom",
+      }}
+    )
+
+  }, [])
 
   return (
     <StaticQuery query={graphql`
@@ -32,15 +56,9 @@ const AboutGrid = () => {
         }
       }
     `} render={({allSanityTech: {nodes}, sanityContent: {aboutCardStoryStory, aboutCardStoryTitle, aboutCardStorySubtitle}}) => (
-      <AboutGalleryContainer>
-        <GeneralCard 
-          attrs={{ 
-            "data-sal": 'fade',
-            "data-sal": 'slide-right',
-            "data-sal-duration": '1000'
-          }}
-        >
-          <CardHeading>
+      <AboutGalleryContainer ref={ref}>
+        <GeneralCard attrs={{"id": "about-1"}}>
+          <CardHeading id="about-heading">
             <CardHeadingTitle>
               {aboutCardStoryTitle}
             </CardHeadingTitle>
@@ -53,11 +71,7 @@ const AboutGrid = () => {
           </CardBody>
         </GeneralCard>
         <GeneralCard 
-          attrs={{ 
-            "data-sal": 'fade',
-            "data-sal": 'slide-left',
-            "data-sal-duration": '1000'
-          }}
+          attrs={{"id": "about-2"}}
         >
           <CardHeading>
             <CardHeadingTitle>

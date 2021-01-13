@@ -87,10 +87,12 @@ export const CardActions = styled.div`
 
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2rem;
 
   @media only screen and (min-width: 64em) {
     flex-direction: row;
+    justify-content: start;
     gap: 5rem;
   }
 `

@@ -1,11 +1,22 @@
 import React, {useState} from 'react'
+import { StaticQuery, graphql } from 'gatsby'
 
-import {NavContainer, NavContent, NavLogo, NavIcon, NavList, NavItem, NavLink, MobileIconContainer, MobileNavIcon, MobileNavClose} from './navbarElements';
+import {NavContainer, NavContent, NavLogo, NavIcon, NavList, NavItem, NavLink, NavLinkExt, MobileIconContainer, MobileNavIcon, MobileNavClose} from './navbarElements';
 
 const Navbar = () => {
   const [showMobileNav, setShowMobileNav] = useState(false);
 
   return (
+    <StaticQuery query={graphql`
+      {
+        sanityContent {
+          navLinks {
+            title
+            url
+          }
+        }
+      }
+    `} render={({sanityContent: {navLinks}}) => (
     <NavContainer>
       <NavContent>
         <NavLogo>
@@ -13,12 +24,19 @@ const Navbar = () => {
           Alex Ricci
         </NavLogo>
         <NavList isToggled={showMobileNav}>
-          <NavItem>
-            <NavLink to="/#about-section">About</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink to="/#projects-section">Projects</NavLink>
-          </NavItem>
+          {
+            navLinks.map(({title, url}) => (
+              <NavItem key={url}>
+                {
+                  url.split('')[0] === '/' ? (
+                    <NavLink to={url}>{title}</NavLink>
+                  ) : (
+                    <NavLinkExt to={url}>{title}</NavLinkExt>
+                  )
+                }
+              </NavItem>
+            ))
+          }
         </NavList>
         <MobileIconContainer onClick={() => setShowMobileNav(!showMobileNav)}>
           <MobileNavClose isToggled={showMobileNav}/>
@@ -26,6 +44,7 @@ const Navbar = () => {
         </MobileIconContainer>
       </NavContent>
     </NavContainer>
+    )} />
   )
 }
 

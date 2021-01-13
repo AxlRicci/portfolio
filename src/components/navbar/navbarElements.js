@@ -107,6 +107,16 @@ export const NavLink = styled(AnchorLink)`
   cursor: pointer;
 `
 
+export const NavLinkExt = styled.a`
+  font-size: 1.4rem;
+  font-weight: 500;
+
+  color: inherit;
+  text-decoration: none;
+
+  cursor: pointer;
+`
+
 export const MobileIconContainer = styled.div`
   width: 3rem;
   height: 3rem;

@@ -35,12 +35,7 @@ export const HeroSectionName = styled.h1`
   font-weight: 600;
 `
 
-export const HeroSectionTitle = styled.h1.attrs(props =>({
-  "data-sal": "fade",
-  "data-sal": "slide-up",
-  "data-sal-duration": '700',
-  "data-sal-easing": 'ease-in-sine'
-}))`
+export const HeroSectionTitle = styled.h1`
   margin-bottom: 1rem;
   
   font-size: 5rem;
@@ -54,13 +49,7 @@ export const HeroSectionTitle = styled.h1.attrs(props =>({
   }
 `
 
-export const HeroSectionSubtitle = styled.p.attrs(props =>({
-  "data-sal": "fade",
-  "data-sal": "slide-up",
-  "data-sal-duration": '700',
-  "data-sal-delay": '200',
-  "data-sal-easing": 'ease-in-sine',
-}))`
+export const HeroSectionSubtitle = styled.p`
   margin-bottom: 2rem;
   
   font-size: 1.8rem;
@@ -72,6 +61,59 @@ export const HeroSectionSubtitle = styled.p.attrs(props =>({
     font-size: 2.2rem;
     line-height: 1.5;
   }
+`
+
+export const HeroSectionSubtitleContainer = styled.div`
+  height: max-content;
+  width: 100%;
+  margin-bottom: 4rem;
+
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  
+  font-size: 1.8rem;
+  line-height: 1.5;
+
+  @media only screen and (min-width: 28em) {
+    font-size: 2.2rem;
+    line-height: 1.5;
+  }
+`
+
+
+export const HeroSectionSubtitleWord = styled.p`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+`
+
+export const HeroSectionSubtitleEmoji = styled.p`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-size: 2.5rem;
+
+  @media only screen and (min-width: 28em) {
+    font-size: 2.5rem;
+  }
+`
+
+export const HeroSectionSubtitleCardContainer = styled.div`
+  height: 3.5rem;
+  width: max-content;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  overflow: hidden;
+  line-height: 1.5;
 `
 
 export const HeroSectionImage = styled(Image)`
@@ -127,3 +169,7 @@ export const LinkedinIcon = styled(SiLinkedin)`
   fill: #000;
   cursor: pointer;
 `
+
+// 1F441 1F497 1F449 1F6A7 2744 1F4A9
+
+// I Love to build cool shit
