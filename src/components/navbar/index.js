@@ -31,7 +31,7 @@ const Navbar = () => {
                   url.split('')[0] === '/' ? (
                     <NavLink to={url}>{title}</NavLink>
                   ) : (
-                    <NavLinkExt to={url}>{title}</NavLinkExt>
+                    <NavLinkExt href={url}>{title}</NavLinkExt>
                   )
                 }
               </NavItem>
