@@ -65,7 +65,9 @@ export const CardGallery = styled.div`
   
   display: flex;
   flex-wrap: wrap;
-  gap: 3rem;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 4rem;
 `
 
 export const CardGalleryItemTooltip = styled.div`

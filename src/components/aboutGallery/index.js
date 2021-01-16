@@ -53,9 +53,11 @@ const AboutGrid = () => {
           aboutCardStoryTitle
           aboutCardStorySubtitle
           aboutCardStoryStory
+          aboutCardTechTitle
+          aboutCardTechSubtitle
         }
       }
-    `} render={({allSanityTech: {nodes}, sanityContent: {aboutCardStoryStory, aboutCardStoryTitle, aboutCardStorySubtitle}}) => (
+    `} render={({allSanityTech: {nodes}, sanityContent: {aboutCardStoryStory, aboutCardStoryTitle, aboutCardStorySubtitle, aboutCardTechTitle, aboutCardTechSubtitle}}) => (
       <AboutGalleryContainer ref={ref}>
         <GeneralCard attrs={{"id": "about-1"}}>
           <CardHeading id="about-heading">
@@ -75,23 +77,25 @@ const AboutGrid = () => {
         >
           <CardHeading>
             <CardHeadingTitle>
-              What I know.
+              {aboutCardTechTitle}
             </CardHeadingTitle>
             <CardHeadingSubtitle>
-              Here are some of the technologies I work with.
+              {aboutCardTechSubtitle}
             </CardHeadingSubtitle>
           </CardHeading>
           <CardGallery>
             {
-              nodes.map(tech => (
-                <CardGalleryItemContainer key={tech.name}>
-                  <CardGalleryIcon src={tech.svg.image.asset.url}>
-                  </CardGalleryIcon>
-                  <CardGalleryItemTooltip >
-                    {tech.name}
-                  </CardGalleryItemTooltip>
-                </CardGalleryItemContainer>
-              ))
+              nodes
+                .sort((a,b) => a.name.localeCompare(b.name))
+                .map(tech => (
+                  <CardGalleryItemContainer key={tech.name}>
+                    <CardGalleryIcon src={tech.svg.image.asset.url}>
+                    </CardGalleryIcon>
+                    <CardGalleryItemTooltip >
+                      {tech.name}
+                    </CardGalleryItemTooltip>
+                  </CardGalleryItemContainer>
+                ))
             }
           </CardGallery>
         </GeneralCard>
